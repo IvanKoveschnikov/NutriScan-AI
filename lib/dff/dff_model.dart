@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'category_chip2_widget.dart' show CategoryChip2Widget;
+import 'dff_widget.dart' show DffWidget;
 import 'package:flutter/material.dart';
 
-class CategoryChip2Model extends FlutterFlowModel<CategoryChip2Widget> {
+class DffModel extends FlutterFlowModel<DffWidget> {
   @override
   void initState(BuildContext context) {}
 

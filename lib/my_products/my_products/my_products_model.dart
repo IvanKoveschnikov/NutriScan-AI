@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/my_products/component/filter_chip/filter_chip_widget.dart';
 import '/my_products/component/product_card/product_card_widget.dart';
+import '/index.dart';
 import 'my_products_widget.dart' show MyProductsWidget;
 import 'package:flutter/material.dart';
 

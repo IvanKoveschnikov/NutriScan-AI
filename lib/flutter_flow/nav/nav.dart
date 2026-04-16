@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '/backend/schema/structs/index.dart';
+
 import '/backend/supabase/supabase.dart';
 
 import '/auth/base_auth_user_provider.dart';
@@ -152,9 +154,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: MyCustomProducts2Widget.routeName,
-          path: MyCustomProducts2Widget.routePath,
-          builder: (context, params) => MyCustomProducts2Widget(),
+          name: DffWidget.routeName,
+          path: DffWidget.routePath,
+          builder: (context, params) => DffWidget(),
+        ),
+        FFRoute(
+          name: AddProductWidget.routeName,
+          path: AddProductWidget.routePath,
+          builder: (context, params) => AddProductWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -273,6 +280,7 @@ class FFParameters {
     String paramName,
     ParamType type, {
     bool isList = false,
+    StructBuilder<T>? structBuilder,
   }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -290,6 +298,7 @@ class FFParameters {
       param,
       type,
       isList,
+      structBuilder: structBuilder,
     );
   }
 }

@@ -17,8 +17,8 @@ class DishProductsRow extends SupabaseDataRow {
   int? get id => getField<int>('id');
   set id(int? value) => setField<int>('id', value);
 
-  int get dishId => getField<int>('dish_id')!;
-  set dishId(int value) => setField<int>('dish_id', value);
+  int get savesDishId => getField<int>('saves_dish_id')!;
+  set savesDishId(int value) => setField<int>('saves_dish_id', value);
 
   int get productId => getField<int>('product_id')!;
   set productId(int value) => setField<int>('product_id', value);

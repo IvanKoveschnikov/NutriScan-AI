@@ -83,8 +83,6 @@ class _MealTemplatesWidgetState extends State<MealTemplatesWidget> {
                           FlutterFlowIconButton(
                             borderRadius: 16.0,
                             buttonSize: 40.0,
-                            fillColor: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
                             icon: Icon(
                               Icons.arrow_back_ios_new_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,
@@ -97,8 +95,6 @@ class _MealTemplatesWidgetState extends State<MealTemplatesWidget> {
                           FlutterFlowIconButton(
                             borderRadius: 16.0,
                             buttonSize: 40.0,
-                            fillColor: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
                             icon: Icon(
                               Icons.search_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,

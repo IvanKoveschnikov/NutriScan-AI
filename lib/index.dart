@@ -15,5 +15,5 @@ export '/my_products/my_products/my_products_widget.dart' show MyProductsWidget;
 export '/meal_templates/meal_templates/meal_templates_widget.dart'
     show MealTemplatesWidget;
 export '/profile/edit_profile/edit_profile_widget.dart' show EditProfileWidget;
-export '/products/my_custom_products2/my_custom_products2_widget.dart'
-    show MyCustomProducts2Widget;
+export '/dff/dff_widget.dart' show DffWidget;
+export '/my_products/add_product/add_product_widget.dart' show AddProductWidget;

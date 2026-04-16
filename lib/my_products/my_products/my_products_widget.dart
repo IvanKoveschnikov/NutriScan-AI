@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/my_products/component/filter_chip/filter_chip_widget.dart';
 import '/my_products/component/product_card/product_card_widget.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'my_products_model.dart';
@@ -70,8 +71,10 @@ class _MyProductsWidgetState extends State<MyProductsWidget> {
           key: scaffoldKey,
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           floatingActionButton: FloatingActionButton.extended(
-            onPressed: () {
-              print('FloatingActionButton pressed ...');
+            onPressed: () async {
+              // переход на экран
+
+              context.pushNamed(AddProductWidget.routeName);
             },
             backgroundColor: FlutterFlowTheme.of(context).primary,
             icon: Icon(
@@ -387,9 +390,10 @@ class _MyProductsWidgetState extends State<MyProductsWidget> {
                                           '0',
                                         ),
                                         icon: itemUserProductItem.categoryIcon,
+                                        callbackAction: (index) async {},
                                       ),
                                     );
-                                  }),
+                                  }).divide(SizedBox(height: 16.0)),
                                 );
                               },
                             ),
